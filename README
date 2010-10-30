@@ -1,0 +1,22 @@
+GoogleCalendarKit
+
+iCal like calendar view and Google Calendar Sync API Kit.
+
+* Author 
+KISHIKAWA Katsumi
+http://d.hatena.ne.jp/KishikawaKatsumi/ (in Japanese)
+
+* License
+The new BSD license
+
+* 3rd parties
+Kal - a calendar component for the iPhone
+------------
+Author: Keith Lazuka
+URL: http://github.com/klazuka/Kal
+
+gdata-objectivec-client
+Google Data APIs Objective-C Client Library 
+-----------------
+URL: http://code.google.com/p/gdata-objectivec-client/
+License: Apache License, Version 2.0

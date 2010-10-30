@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14D67D42127B3FB8009E306A /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14D67D41127B3FB8009E306A /* Kal.bundle */; };
+		14D67D52127B3FE2009E306A /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D67D40127B3FB2009E306A /* libKal.a */; };
+		14D67D78127B414C009E306A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D67D77127B414C009E306A /* Icon.png */; };
+		14D67E30127B4694009E306A /* GCKHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E21127B4693009E306A /* GCKHoliday.m */; };
+		14D67E31127B4694009E306A /* GCKRecurrenceDayOfWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E23127B4693009E306A /* GCKRecurrenceDayOfWeek.m */; };
+		14D67E32127B4694009E306A /* GCKParticipant.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E25127B4693009E306A /* GCKParticipant.m */; };
+		14D67E33127B4694009E306A /* GCKRecurrenceEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E27127B4693009E306A /* GCKRecurrenceEnd.m */; };
+		14D67E34127B4694009E306A /* GCKRecurrenceRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E29127B4693009E306A /* GCKRecurrenceRule.m */; };
+		14D67E36127B4694009E306A /* GCKOriginalEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E2D127B4694009E306A /* GCKOriginalEvent.m */; };
+		14D67E37127B4694009E306A /* GCKAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E2F127B4694009E306A /* GCKAlarm.m */; };
+		14D67E5D127B4BF4009E306A /* GCKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67E5B127B4BF4009E306A /* GCKEvent.m */; };
+		14D67F87127B55A9009E306A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D67F86127B55A9009E306A /* libxml2.dylib */; };
+		14D67F8F127B55F9009E306A /* GCKSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67F8E127B55F9009E306A /* GCKSync.m */; };
+		14D67F92127B5609009E306A /* GCKEventFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67F91127B5609009E306A /* GCKEventFetcher.m */; };
+		14D67F9E127B591B009E306A /* GCKEventUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67F9D127B591B009E306A /* GCKEventUpdater.m */; };
+		14D68038127B5EE7009E306A /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D68037127B5EE7009E306A /* libGDataTouchStaticLib.a */; };
+		14D68056127B612E009E306A /* settings_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D68054127B612E009E306A /* settings_small.png */; };
+		14D68057127B612E009E306A /* settings_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D68055127B612E009E306A /* settings_small@2x.png */; };
+		14D68076127B6244009E306A /* UIImage+ProportionalFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68073127B6244009E306A /* UIImage+ProportionalFill.m */; };
+		14D68077127B6244009E306A /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68075127B6244009E306A /* UIImage+Tint.m */; };
+		14D6808B127B62D7009E306A /* GCKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D6808A127B62D7009E306A /* GCKSettingViewController.m */; };
+		14D680D9127B6932009E306A /* GCKCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D680D8127B6932009E306A /* GCKCalendarCell.m */; };
+		14D680F4127B6D79009E306A /* GCKEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D680F3127B6D79009E306A /* GCKEventStore.m */; };
+		14D68108127B6E41009E306A /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68107127B6E41009E306A /* NSString+UUID.m */; };
+		14D6810B127B6EA4009E306A /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D6810A127B6EA4009E306A /* UIColor+Additions.m */; };
+		14D68214127B7980009E306A /* GCKCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68213127B7980009E306A /* GCKCalendar.m */; };
+		14D68281127B827E009E306A /* GCKDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68280127B827E009E306A /* GCKDateRange.m */; };
+		14D6828C127B82D0009E306A /* DescriptionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D6828B127B82D0009E306A /* DescriptionBuilder.m */; };
+		14D68292127B8316009E306A /* GCKGregorian.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68291127B8316009E306A /* GCKGregorian.m */; };
+		14D6829E127B8370009E306A /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D6829D127B8370009E306A /* NSDate+Additions.m */; };
+		14D68303127BA8E6009E306A /* GoogleTimeZoneUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68300127BA8E6009E306A /* GoogleTimeZoneUtilities.m */; };
+		14D68304127BA8E6009E306A /* RecurrenceRFC2445.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68302127BA8E6009E306A /* RecurrenceRFC2445.m */; };
+		14D68337127BAB5E009E306A /* LCCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68336127BAB5E009E306A /* LCCalendarDate.m */; };
+		14D68391127BAEFA009E306A /* GCKSyncGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68390127BAEFA009E306A /* GCKSyncGroup.m */; };
+		14D683D7127BB4CA009E306A /* GCKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D683D6127BB4CA009E306A /* GCKDataSource.m */; };
+		1D3623260D0F684500981E51 /* GoogleCalendarKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoogleCalendarKitAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28193060112F816700ECF9B4 /* GoogleCalendarKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* GoogleCalendarKit.xcdatamodeld */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14D67D3F127B3FB2009E306A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D67D3B127B3FB2009E306A /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
+		14D67D50127B3FD8009E306A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D67D3B127B3FB2009E306A /* Kal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Kal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14D67D3B127B3FB2009E306A /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kal.xcodeproj; path = Kal/src/Kal.xcodeproj; sourceTree = "<group>"; };
+		14D67D41127B3FB8009E306A /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Kal.bundle; path = Kal/src/Kal.bundle; sourceTree = "<group>"; };
+		14D67D77127B414C009E306A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		14D67E20127B4693009E306A /* GCKHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKHoliday.h; sourceTree = "<group>"; };
+		14D67E21127B4693009E306A /* GCKHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKHoliday.m; sourceTree = "<group>"; };
+		14D67E22127B4693009E306A /* GCKRecurrenceDayOfWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKRecurrenceDayOfWeek.h; sourceTree = "<group>"; };
+		14D67E23127B4693009E306A /* GCKRecurrenceDayOfWeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKRecurrenceDayOfWeek.m; sourceTree = "<group>"; };
+		14D67E24127B4693009E306A /* GCKParticipant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKParticipant.h; sourceTree = "<group>"; };
+		14D67E25127B4693009E306A /* GCKParticipant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKParticipant.m; sourceTree = "<group>"; };
+		14D67E26127B4693009E306A /* GCKRecurrenceEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKRecurrenceEnd.h; sourceTree = "<group>"; };
+		14D67E27127B4693009E306A /* GCKRecurrenceEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKRecurrenceEnd.m; sourceTree = "<group>"; };
+		14D67E28127B4693009E306A /* GCKRecurrenceRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKRecurrenceRule.h; sourceTree = "<group>"; };
+		14D67E29127B4693009E306A /* GCKRecurrenceRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKRecurrenceRule.m; sourceTree = "<group>"; };
+		14D67E2C127B4694009E306A /* GCKOriginalEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKOriginalEvent.h; sourceTree = "<group>"; };
+		14D67E2D127B4694009E306A /* GCKOriginalEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKOriginalEvent.m; sourceTree = "<group>"; };
+		14D67E2E127B4694009E306A /* GCKAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKAlarm.h; sourceTree = "<group>"; };
+		14D67E2F127B4694009E306A /* GCKAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKAlarm.m; sourceTree = "<group>"; };
+		14D67E5A127B4BF4009E306A /* GCKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKEvent.h; sourceTree = "<group>"; };
+		14D67E5B127B4BF4009E306A /* GCKEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEvent.m; sourceTree = "<group>"; };
+		14D67F86127B55A9009E306A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		14D67F8D127B55F9009E306A /* GCKSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKSync.h; sourceTree = "<group>"; };
+		14D67F8E127B55F9009E306A /* GCKSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKSync.m; sourceTree = "<group>"; };
+		14D67F90127B5609009E306A /* GCKEventFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKEventFetcher.h; sourceTree = "<group>"; };
+		14D67F91127B5609009E306A /* GCKEventFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEventFetcher.m; sourceTree = "<group>"; };
+		14D67F9C127B591B009E306A /* GCKEventUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKEventUpdater.h; sourceTree = "<group>"; };
+		14D67F9D127B591B009E306A /* GCKEventUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEventUpdater.m; sourceTree = "<group>"; };
+		14D68037127B5EE7009E306A /* libGDataTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDataTouchStaticLib.a; path = "gdata-objectivec-client/Source/build/libGDataTouchStaticLib.a"; sourceTree = "<group>"; };
+		14D68054127B612E009E306A /* settings_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_small.png; sourceTree = "<group>"; };
+		14D68055127B612E009E306A /* settings_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_small@2x.png"; sourceTree = "<group>"; };
+		14D68072127B6244009E306A /* UIImage+ProportionalFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ProportionalFill.h"; sourceTree = "<group>"; };
+		14D68073127B6244009E306A /* UIImage+ProportionalFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ProportionalFill.m"; sourceTree = "<group>"; };
+		14D68074127B6244009E306A /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		14D68075127B6244009E306A /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		14D68089127B62D7009E306A /* GCKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKSettingViewController.h; sourceTree = "<group>"; };
+		14D6808A127B62D7009E306A /* GCKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKSettingViewController.m; sourceTree = "<group>"; };
+		14D680D7127B6932009E306A /* GCKCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKCalendarCell.h; sourceTree = "<group>"; };
+		14D680D8127B6932009E306A /* GCKCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKCalendarCell.m; sourceTree = "<group>"; };
+		14D680F2127B6D79009E306A /* GCKEventStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKEventStore.h; sourceTree = "<group>"; };
+		14D680F3127B6D79009E306A /* GCKEventStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEventStore.m; sourceTree = "<group>"; };
+		14D68106127B6E41009E306A /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		14D68107127B6E41009E306A /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		14D68109127B6EA4009E306A /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		14D6810A127B6EA4009E306A /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		14D68212127B7980009E306A /* GCKCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKCalendar.h; sourceTree = "<group>"; };
+		14D68213127B7980009E306A /* GCKCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKCalendar.m; sourceTree = "<group>"; };
+		14D6827F127B827E009E306A /* GCKDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKDateRange.h; sourceTree = "<group>"; };
+		14D68280127B827E009E306A /* GCKDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKDateRange.m; sourceTree = "<group>"; };
+		14D6828A127B82D0009E306A /* DescriptionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionBuilder.h; sourceTree = "<group>"; };
+		14D6828B127B82D0009E306A /* DescriptionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionBuilder.m; sourceTree = "<group>"; };
+		14D68290127B8316009E306A /* GCKGregorian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKGregorian.h; sourceTree = "<group>"; };
+		14D68291127B8316009E306A /* GCKGregorian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKGregorian.m; sourceTree = "<group>"; };
+		14D6829C127B8370009E306A /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		14D6829D127B8370009E306A /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		14D682FF127BA8E6009E306A /* GoogleTimeZoneUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleTimeZoneUtilities.h; sourceTree = "<group>"; };
+		14D68300127BA8E6009E306A /* GoogleTimeZoneUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleTimeZoneUtilities.m; sourceTree = "<group>"; };
+		14D68301127BA8E6009E306A /* RecurrenceRFC2445.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecurrenceRFC2445.h; sourceTree = "<group>"; };
+		14D68302127BA8E6009E306A /* RecurrenceRFC2445.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecurrenceRFC2445.m; sourceTree = "<group>"; };
+		14D68335127BAB5E009E306A /* LCCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCalendarDate.h; sourceTree = "<group>"; };
+		14D68336127BAB5E009E306A /* LCCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCalendarDate.m; sourceTree = "<group>"; };
+		14D6838F127BAEFA009E306A /* GCKSyncGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKSyncGroup.h; sourceTree = "<group>"; };
+		14D68390127BAEFA009E306A /* GCKSyncGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKSyncGroup.m; sourceTree = "<group>"; };
+		14D683D5127BB4CA009E306A /* GCKDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKDataSource.h; sourceTree = "<group>"; };
+		14D683D6127BB4CA009E306A /* GCKDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKDataSource.m; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GoogleCalendarKitAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleCalendarKitAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GoogleCalendarKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleCalendarKitAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* GoogleCalendarKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleCalendarKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C3AD890F43EF2300507BA6 /* GoogleCalendarKit.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = GoogleCalendarKit.xcdatamodel; sourceTree = "<group>"; };
+		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* GoogleCalendarKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleCalendarKit_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* GoogleCalendarKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleCalendarKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
+				14D67D52127B3FE2009E306A /* libKal.a in Frameworks */,
+				14D67F87127B55A9009E306A /* libxml2.dylib in Frameworks */,
+				14D68038127B5EE7009E306A /* libGDataTouchStaticLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* GoogleCalendarKitAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GoogleCalendarKitAppDelegate.m */,
+				14D683D5127BB4CA009E306A /* GCKDataSource.h */,
+				14D683D6127BB4CA009E306A /* GCKDataSource.m */,
+				14D68089127B62D7009E306A /* GCKSettingViewController.h */,
+				14D6808A127B62D7009E306A /* GCKSettingViewController.m */,
+				14D680D7127B6932009E306A /* GCKCalendarCell.h */,
+				14D680D8127B6932009E306A /* GCKCalendarCell.m */,
+				14D680F2127B6D79009E306A /* GCKEventStore.h */,
+				14D680F3127B6D79009E306A /* GCKEventStore.m */,
+				14D6838F127BAEFA009E306A /* GCKSyncGroup.h */,
+				14D68390127BAEFA009E306A /* GCKSyncGroup.m */,
+				14D67F8D127B55F9009E306A /* GCKSync.h */,
+				14D67F8E127B55F9009E306A /* GCKSync.m */,
+				14D67F90127B5609009E306A /* GCKEventFetcher.h */,
+				14D67F91127B5609009E306A /* GCKEventFetcher.m */,
+				14D67F9C127B591B009E306A /* GCKEventUpdater.h */,
+				14D67F9D127B591B009E306A /* GCKEventUpdater.m */,
+				14D6827F127B827E009E306A /* GCKDateRange.h */,
+				14D68280127B827E009E306A /* GCKDateRange.m */,
+				14D68290127B8316009E306A /* GCKGregorian.h */,
+				14D68291127B8316009E306A /* GCKGregorian.m */,
+				14D68109127B6EA4009E306A /* UIColor+Additions.h */,
+				14D6810A127B6EA4009E306A /* UIColor+Additions.m */,
+				14D6829C127B8370009E306A /* NSDate+Additions.h */,
+				14D6829D127B8370009E306A /* NSDate+Additions.m */,
+				14D68106127B6E41009E306A /* NSString+UUID.h */,
+				14D68107127B6E41009E306A /* NSString+UUID.m */,
+				14D6828A127B82D0009E306A /* DescriptionBuilder.h */,
+				14D6828B127B82D0009E306A /* DescriptionBuilder.m */,
+				14D68305127BA8EC009E306A /* RFC2445 */,
+				14D68338127BAB66009E306A /* LCCalendarDate */,
+				14D68078127B624B009E306A /* MGImageUtilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14D67D3C127B3FB2009E306A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14D67D40127B3FB2009E306A /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14D67D7A127B4158009E306A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				14D67D77127B414C009E306A /* Icon.png */,
+				14D68054127B612E009E306A /* settings_small.png */,
+				14D68055127B612E009E306A /* settings_small@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		14D68078127B624B009E306A /* MGImageUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				14D68072127B6244009E306A /* UIImage+ProportionalFill.h */,
+				14D68073127B6244009E306A /* UIImage+ProportionalFill.m */,
+				14D68074127B6244009E306A /* UIImage+Tint.h */,
+				14D68075127B6244009E306A /* UIImage+Tint.m */,
+			);
+			name = MGImageUtilities;
+			sourceTree = "<group>";
+		};
+		14D68305127BA8EC009E306A /* RFC2445 */ = {
+			isa = PBXGroup;
+			children = (
+				14D682FF127BA8E6009E306A /* GoogleTimeZoneUtilities.h */,
+				14D68300127BA8E6009E306A /* GoogleTimeZoneUtilities.m */,
+				14D68301127BA8E6009E306A /* RecurrenceRFC2445.h */,
+				14D68302127BA8E6009E306A /* RecurrenceRFC2445.m */,
+			);
+			name = RFC2445;
+			sourceTree = "<group>";
+		};
+		14D68338127BAB66009E306A /* LCCalendarDate */ = {
+			isa = PBXGroup;
+			children = (
+				14D68335127BAB5E009E306A /* LCCalendarDate.h */,
+				14D68336127BAB5E009E306A /* LCCalendarDate.m */,
+			);
+			name = LCCalendarDate;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GoogleCalendarKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				14D67D3B127B3FB2009E306A /* Kal.xcodeproj */,
+				14D67D41127B3FB8009E306A /* Kal.bundle */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* GoogleCalendarKit_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14D67D7A127B4158009E306A /* Images */,
+				8D1107310486CEB800E47090 /* GoogleCalendarKit-Info.plist */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				2819305F112F816700ECF9B4 /* GoogleCalendarKit.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				28D801B30F44B63D00FB423F /* CoreData.framework */,
+				14D67F86127B55A9009E306A /* libxml2.dylib */,
+				14D68037127B5EE7009E306A /* libGDataTouchStaticLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GoogleCalendarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GoogleCalendarKit" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14D67D51127B3FD8009E306A /* PBXTargetDependency */,
+			);
+			name = GoogleCalendarKit;
+			productName = GoogleCalendarKit;
+			productReference = 1D6058910D05DD3D006BFB54 /* GoogleCalendarKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GoogleCalendarKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 14D67D3C127B3FB2009E306A /* Products */;
+					ProjectRef = 14D67D3B127B3FB2009E306A /* Kal.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GoogleCalendarKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		14D67D40127B3FB2009E306A /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = 14D67D3F127B3FB2009E306A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				14D67D42127B3FB8009E306A /* Kal.bundle in Resources */,
+				14D67D78127B414C009E306A /* Icon.png in Resources */,
+				14D68056127B612E009E306A /* settings_small.png in Resources */,
+				14D68057127B612E009E306A /* settings_small@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GoogleCalendarKitAppDelegate.m in Sources */,
+				28193060112F816700ECF9B4 /* GoogleCalendarKit.xcdatamodeld in Sources */,
+				14D67E30127B4694009E306A /* GCKHoliday.m in Sources */,
+				14D67E31127B4694009E306A /* GCKRecurrenceDayOfWeek.m in Sources */,
+				14D67E32127B4694009E306A /* GCKParticipant.m in Sources */,
+				14D67E33127B4694009E306A /* GCKRecurrenceEnd.m in Sources */,
+				14D67E34127B4694009E306A /* GCKRecurrenceRule.m in Sources */,
+				14D67E36127B4694009E306A /* GCKOriginalEvent.m in Sources */,
+				14D67E37127B4694009E306A /* GCKAlarm.m in Sources */,
+				14D67E5D127B4BF4009E306A /* GCKEvent.m in Sources */,
+				14D67F8F127B55F9009E306A /* GCKSync.m in Sources */,
+				14D67F92127B5609009E306A /* GCKEventFetcher.m in Sources */,
+				14D67F9E127B591B009E306A /* GCKEventUpdater.m in Sources */,
+				14D68076127B6244009E306A /* UIImage+ProportionalFill.m in Sources */,
+				14D68077127B6244009E306A /* UIImage+Tint.m in Sources */,
+				14D6808B127B62D7009E306A /* GCKSettingViewController.m in Sources */,
+				14D680D9127B6932009E306A /* GCKCalendarCell.m in Sources */,
+				14D680F4127B6D79009E306A /* GCKEventStore.m in Sources */,
+				14D68108127B6E41009E306A /* NSString+UUID.m in Sources */,
+				14D6810B127B6EA4009E306A /* UIColor+Additions.m in Sources */,
+				14D68214127B7980009E306A /* GCKCalendar.m in Sources */,
+				14D68281127B827E009E306A /* GCKDateRange.m in Sources */,
+				14D6828C127B82D0009E306A /* DescriptionBuilder.m in Sources */,
+				14D68292127B8316009E306A /* GCKGregorian.m in Sources */,
+				14D6829E127B8370009E306A /* NSDate+Additions.m in Sources */,
+				14D68303127BA8E6009E306A /* GoogleTimeZoneUtilities.m in Sources */,
+				14D68304127BA8E6009E306A /* RecurrenceRFC2445.m in Sources */,
+				14D68337127BAB5E009E306A /* LCCalendarDate.m in Sources */,
+				14D68391127BAEFA009E306A /* GCKSyncGroup.m in Sources */,
+				14D683D7127BB4CA009E306A /* GCKDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14D67D51127B3FD8009E306A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kal;
+			targetProxy = 14D67D50127B3FD8009E306A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoogleCalendarKit_Prefix.pch;
+				INFOPLIST_FILE = "GoogleCalendarKit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/gdata-objectivec-client/Source/build\"",
+				);
+				PRODUCT_NAME = GoogleCalendarKit;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoogleCalendarKit_Prefix.pch;
+				INFOPLIST_FILE = "GoogleCalendarKit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/gdata-objectivec-client/Source/build\"",
+				);
+				PRODUCT_NAME = GoogleCalendarKit;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"gdata-objectivec-client/Source/**",
+					Kal/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = (
+					"-D__IPHONE_OS_VERSION_MIN_REQUIRED=40100",
+					"-Xclang",
+					"-fobjc-nonfragile-abi2",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"gdata-objectivec-client/Source/**",
+					Kal/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-D__IPHONE_OS_VERSION_MIN_REQUIRED=40100",
+					"-Xclang",
+					"-fobjc-nonfragile-abi2",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GoogleCalendarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GoogleCalendarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2819305F112F816700ECF9B4 /* GoogleCalendarKit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14D68212127B7980009E306A /* GCKCalendar.h */,
+				14D68213127B7980009E306A /* GCKCalendar.m */,
+				14D67E5A127B4BF4009E306A /* GCKEvent.h */,
+				14D67E5B127B4BF4009E306A /* GCKEvent.m */,
+				14D67E2E127B4694009E306A /* GCKAlarm.h */,
+				14D67E2F127B4694009E306A /* GCKAlarm.m */,
+				14D67E24127B4693009E306A /* GCKParticipant.h */,
+				14D67E25127B4693009E306A /* GCKParticipant.m */,
+				14D67E28127B4693009E306A /* GCKRecurrenceRule.h */,
+				14D67E29127B4693009E306A /* GCKRecurrenceRule.m */,
+				14D67E26127B4693009E306A /* GCKRecurrenceEnd.h */,
+				14D67E27127B4693009E306A /* GCKRecurrenceEnd.m */,
+				14D67E22127B4693009E306A /* GCKRecurrenceDayOfWeek.h */,
+				14D67E23127B4693009E306A /* GCKRecurrenceDayOfWeek.m */,
+				14D67E2C127B4694009E306A /* GCKOriginalEvent.h */,
+				14D67E2D127B4694009E306A /* GCKOriginalEvent.m */,
+				14D67E20127B4693009E306A /* GCKHoliday.h */,
+				14D67E21127B4693009E306A /* GCKHoliday.m */,
+				28C3AD890F43EF2300507BA6 /* GoogleCalendarKit.xcdatamodel */,
+			);
+			currentVersion = 28C3AD890F43EF2300507BA6 /* GoogleCalendarKit.xcdatamodel */;
+			path = GoogleCalendarKit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

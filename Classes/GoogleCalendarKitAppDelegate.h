@@ -11,7 +11,7 @@
 
 @class KalViewController;
 
-@interface GoogleCalendarKitAppDelegate : NSObject <UIApplicationDelegate> {
+@interface GoogleCalendarKitAppDelegate : NSObject <UIApplicationDelegate, UITableViewDelegate> {
     UINavigationController *navController;
     KalViewController *kal;
     id dataSource;

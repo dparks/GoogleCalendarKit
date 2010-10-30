@@ -22,7 +22,6 @@
 		14D67F8F127B55F9009E306A /* GCKSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67F8E127B55F9009E306A /* GCKSync.m */; };
 		14D67F92127B5609009E306A /* GCKEventFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67F91127B5609009E306A /* GCKEventFetcher.m */; };
 		14D67F9E127B591B009E306A /* GCKEventUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D67F9D127B591B009E306A /* GCKEventUpdater.m */; };
-		14D68038127B5EE7009E306A /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D68037127B5EE7009E306A /* libGDataTouchStaticLib.a */; };
 		14D68056127B612E009E306A /* settings_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D68054127B612E009E306A /* settings_small.png */; };
 		14D68057127B612E009E306A /* settings_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D68055127B612E009E306A /* settings_small@2x.png */; };
 		14D68076127B6244009E306A /* UIImage+ProportionalFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68073127B6244009E306A /* UIImage+ProportionalFill.m */; };
@@ -43,6 +42,7 @@
 		14D68391127BAEFA009E306A /* GCKSyncGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D68390127BAEFA009E306A /* GCKSyncGroup.m */; };
 		14D683D7127BB4CA009E306A /* GCKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D683D6127BB4CA009E306A /* GCKDataSource.m */; };
 		14D6841F127BB7E1009E306A /* GCKEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D6841E127BB7E1009E306A /* GCKEventCell.m */; };
+		14D68508127BF3CE009E306A /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D68507127BF3CE009E306A /* libGDataTouchStaticLib.a */; };
 		1D3623260D0F684500981E51 /* GoogleCalendarKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoogleCalendarKitAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -97,7 +97,6 @@
 		14D67F91127B5609009E306A /* GCKEventFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEventFetcher.m; sourceTree = "<group>"; };
 		14D67F9C127B591B009E306A /* GCKEventUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKEventUpdater.h; sourceTree = "<group>"; };
 		14D67F9D127B591B009E306A /* GCKEventUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEventUpdater.m; sourceTree = "<group>"; };
-		14D68037127B5EE7009E306A /* libGDataTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDataTouchStaticLib.a; path = "gdata-objectivec-client/Source/build/libGDataTouchStaticLib.a"; sourceTree = "<group>"; };
 		14D68054127B612E009E306A /* settings_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_small.png; sourceTree = "<group>"; };
 		14D68055127B612E009E306A /* settings_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_small@2x.png"; sourceTree = "<group>"; };
 		14D68072127B6244009E306A /* UIImage+ProportionalFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ProportionalFill.h"; sourceTree = "<group>"; };
@@ -136,6 +135,7 @@
 		14D683D6127BB4CA009E306A /* GCKDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKDataSource.m; sourceTree = "<group>"; };
 		14D6841D127BB7E1009E306A /* GCKEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKEventCell.h; sourceTree = "<group>"; };
 		14D6841E127BB7E1009E306A /* GCKEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKEventCell.m; sourceTree = "<group>"; };
+		14D68507127BF3CE009E306A /* libGDataTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDataTouchStaticLib.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* GoogleCalendarKitAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleCalendarKitAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* GoogleCalendarKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleCalendarKitAppDelegate.m; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
 				14D67D52127B3FE2009E306A /* libKal.a in Frameworks */,
 				14D67F87127B55A9009E306A /* libxml2.dylib in Frameworks */,
-				14D68038127B5EE7009E306A /* libGDataTouchStaticLib.a in Frameworks */,
+				14D68508127BF3CE009E306A /* libGDataTouchStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +341,7 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				28D801B30F44B63D00FB423F /* CoreData.framework */,
 				14D67F86127B55A9009E306A /* libxml2.dylib */,
-				14D68037127B5EE7009E306A /* libGDataTouchStaticLib.a */,
+				14D68507127BF3CE009E306A /* libGDataTouchStaticLib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

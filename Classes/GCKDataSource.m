@@ -9,8 +9,10 @@
 #import "GCKDataSource.h"
 #import "GCKEventStore.h"
 #import "GCKEvent.h"
+#import "GCKCalendar.h"
 #import "GCKDateRange.h"
 #import "GCKSync.h"
+#import "GCKEventCell.h"
 
 static BOOL IsDateBetweenInclusive(NSDate *date, NSDate *begin, NSDate *end) {
     return [date compare:begin] != NSOrderedAscending && [date compare:end] != NSOrderedDescending;
@@ -33,6 +35,14 @@ static BOOL IsDateBetweenInclusive(NSDate *date, NSDate *begin, NSDate *end) {
         events = [[NSMutableArray alloc] init];
         items = [[NSMutableArray alloc] init];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(eventUpdated:) name:kEventsUpdatedNotification object:nil];
+        
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setLocale:[NSLocale currentLocale]];
+        [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+        
+        timeFormatter = [[NSDateFormatter alloc] init];
+        [timeFormatter setLocale:[NSLocale currentLocale]];
+        [timeFormatter setDateFormat:@"H:mm"];
     }
     return self;
 }
@@ -41,6 +51,8 @@ static BOOL IsDateBetweenInclusive(NSDate *date, NSDate *begin, NSDate *end) {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [items release];
     [events release];
+    [dateFormatter release];
+    [timeFormatter release];
     [super dealloc];
 }
 
@@ -55,17 +67,23 @@ static BOOL IsDateBetweenInclusive(NSDate *date, NSDate *begin, NSDate *end) {
 #pragma mark -
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"MyCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    static NSString *identifier = @"Cell";
+    GCKEventCell *cell = (GCKEventCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
+        cell = (GCKEventCell *)[[[GCKEventCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     }
     
     GCKEvent *event = [self eventAtIndexPath:indexPath];
-    cell.textLabel.text = event.title;
+    cell.title = event.title;
+    cell.color = event.calendar.color;
+    BOOL allDay = [event.allDay boolValue];
+    if (allDay) {
+        cell.startDate = NSLocalizedString(@"all-day", nil);
+    } else {
+        cell.startDate = [timeFormatter stringFromDate:event.startDate];
+    }
     return cell;
 }
 

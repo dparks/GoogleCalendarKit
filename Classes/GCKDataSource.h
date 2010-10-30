@@ -15,6 +15,9 @@
     NSMutableArray *items;
     NSMutableArray *events;
     GCKEventStore *eventStore;
+    
+    NSDateFormatter *dateFormatter;
+    NSDateFormatter *timeFormatter;
 }
 
 + (GCKDataSource *)dataSource;
